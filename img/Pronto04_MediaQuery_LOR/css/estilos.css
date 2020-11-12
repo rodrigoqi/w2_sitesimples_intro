@@ -1,0 +1,164 @@
+#principal{
+	width: 100%;
+}
+
+#cabecalho{
+	width: 100%;
+	height: 70px;
+}
+
+#cabecalho img{
+	width: 25%;
+	height: 100%;
+	float: left;
+}
+
+#menu{
+	width: 75%;
+	height: 100%;
+	float: right;
+}
+
+#menu li{
+	display: inline;
+}
+
+#menu a{
+	text-decoration: none;
+	color: #999999;
+	font-size: 2.0em;
+	margin-left: 2%;
+}
+
+#menu a:hover{
+	text-decoration: underline;
+}
+
+#menu ul{
+	text-align: right;
+}
+
+#banner{
+	width: 100%;
+	height: 450px;
+	background-image: url("../img/gandalfgrande.jpg");
+	background-size: 100% 100%;
+	position: relative;
+}
+
+#caixaFlutuante{
+	width: 50%;
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	padding: 1% 2% 1% 2%;
+	position: absolute;
+	top: 20%;
+}
+
+#caixaFlutuante h1{
+	font-size: 3.0em;	
+}
+
+#caixaFlutuante p{
+	font-size: 1.7em;
+}
+
+#caixaFlutuante a{
+	font-size: 1.4em;
+	text-decoration: none;
+	color: #00CCFF;
+}
+
+.coluna{
+	width: 22%;
+	margin-right: 4%;
+	float: left;
+	margin-top: 2%;
+	text-align: center;
+}
+
+.coluna:last-child{
+	margin-right: 0px;
+}
+
+.coluna img{
+	width: 100%;
+}
+
+@media screen and (max-width: 800px){
+	#menu a{
+		font-size: 1.3em;
+	}
+	
+	#banner{
+		background-image: url("../img/gandalfmedio.jpg");
+	}
+	
+	#caixaFlutuante h1{
+		font-size: 2.2em;
+	}
+	
+	#caixaFlutuante p{
+		font-size: 1.2em;
+	}
+	
+	#caixaFlutuante a{
+		font-size: 0.9em;
+	}
+	
+	.coluna{
+		width: 48%;
+		margin-right: 4%;
+	}
+	
+	#diferentona{
+		margin-right: 0px;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.coluna{
+		width: 100%;
+		margin-right: 0px;
+	}
+	
+	#cabecalho img{
+		width: 100%;
+		height: 60%;
+	}
+	
+	#cabecalho{
+		height: 150px;
+	}
+	
+	#menu{
+		width: 100%;
+	}
+	
+	#menu ul{
+		text-align: center;
+	}
+	
+	#banner{
+		background-image: url("../img/gandalfpequeno.jpg");
+	}
+	
+	#caixaFlutuante{
+		width: 96%;
+		bottom: 0px;
+		top: unset;
+	}
+	
+	#caixaFluante h1{
+		font-size: 1.9em; 
+	}
+	
+	#caixaFlutuante p{
+		font-size: 1.0em;
+	}
+	
+	#caixaFluante a{
+		font-size: 1.2em;
+	}
+}
+
